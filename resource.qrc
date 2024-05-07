@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/shader">
+        <file>model_out.frag</file>
+        <file>model_input.vert</file>
+        <file>model_out.vert</file>
+        <file>model_input.frag</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>res/model/input_muyulu.obj</file>
+        <file>res/model/out_muyulu.obj</file>
+    </qresource>
+</RCC>

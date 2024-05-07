@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>demo/1.png</file>
+        <file>demo/2.png</file>
+        <file>demo/3.png</file>
+        <file>demo/4.png</file>
+        <file>demo/background-1.png</file>
+        <file>demo/background-2.png</file>
+        <file>demo/background-3.png</file>
+        <file>demo/background-4.png</file>
+        <file>demo/bg1.jpg</file>
+        <file>demo/bg2.jpg</file>
+        <file>demo/DataSource.png</file>
+        <file>demo/FolderOpened.png</file>
+        <file>demo/GenerateFile.png</file>
+        <file>demo/OpenFile.png</file>
+        <file>demo/OpenFolder.png</file>
+        <file>demo/Path.png</file>
+        <file>demo/Run.png</file>
+    </qresource>
+</RCC>
