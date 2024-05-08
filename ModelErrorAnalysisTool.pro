@@ -45,7 +45,9 @@ DISTFILES += \
 
 RESOURCES += \
     resource.qrc \
-    demo.qrc
+    demo.qrc \
+    new.qrc \
+    color.qrc
 
 win32:LIBS += -lOpengl32 \
                 -lglu32 \

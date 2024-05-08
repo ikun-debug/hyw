@@ -24,9 +24,14 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    mainwindow2 = new MainWindow2(this);
+    //connect(mainwindow2,SIGNAL(bSignal()),this,SLOT(showAHideB()));
+
+
+
 
     //设置标题
-    setWindowTitle("帮助");
+    setWindowTitle("三维网格模型误差分析工具");
 
     //固定窗口大小
     setFixedSize(1100, 600); // 设置窗口大小为 1100x600 像素
@@ -103,6 +108,9 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->showInput,SIGNAL(clicked()),this,SLOT(showInput()));
     connect(ui->showOut,SIGNAL(clicked()),this,SLOT(showOut()));
     connect(ui->showError,SIGNAL(clicked()),this,SLOT(showError()));
+    connect(ui->showError,SIGNAL(clicked()),this,SLOT(&MainWindow::on_showMessage_clicked));
+
+    connect(ui->showHelp,SIGNAL(clicked()),this,SLOT(showHelp()));
 
     //视角调整范围
     ui->Slider_xrot->setRange(-180,180);
@@ -163,6 +171,22 @@ MainWindow::MainWindow(QWidget *parent)
     });
 
 }
+
+void MainWindow::showHelp()
+{
+    this->hide();
+    mainwindow2->show();
+}
+
+/*
+void MainWindow::showAHideB()
+{
+    this->show();
+    mainwindow2->hide();
+}
+*/
+
+
 
 MainWindow::~MainWindow()
 {
@@ -258,3 +282,15 @@ void MainWindow::showError()
 
 
 
+
+void MainWindow::on_showError_clicked()
+{
+    QMessageBox* msgBox = new QMessageBox(this);
+    msgBox->setAttribute(Qt::WA_DeleteOnClose); // 确保消息框关闭时自动删除
+    msgBox->setText("计算较慢 稍等！");
+    msgBox->setIcon(QMessageBox::Information);  // 设置图标为信息图标
+    msgBox->setWindowTitle("Message");
+    msgBox->show();
+
+    QTimer::singleShot(2000, msgBox, &QMessageBox::accept);  // 在3秒后接受（关闭）消息框
+}

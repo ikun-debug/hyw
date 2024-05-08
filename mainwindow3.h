@@ -2,6 +2,8 @@
 #define MAINWINDOW3_H
 
 #include <QMainWindow>
+#include <QSpinBox>
+
 
 namespace Ui {
 class MainWindow3;
@@ -17,6 +19,11 @@ public:
 
 private:
     Ui::MainWindow3 *ui;
+
+    //QSpinBox *spinBox;
+
+private slots:
+    //void spinBoxValueChanged(int);
 };
 
 #endif // MAINWINDOW3_H

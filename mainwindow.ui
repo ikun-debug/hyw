@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1000</width>
-    <height>605</height>
+    <height>667</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -475,7 +475,7 @@ border-radius:5px;</string>
      <string>showInput</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="showHelp">
     <property name="geometry">
      <rect>
       <x>790</x>
@@ -506,7 +506,7 @@ border-radius:5px;</string>
       <x>20</x>
       <y>480</y>
       <width>461</width>
-      <height>80</height>
+      <height>41</height>
      </rect>
     </property>
    </widget>
@@ -523,6 +523,28 @@ border-radius:5px;</string>
      <string>三维模型误差分析工具</string>
     </property>
    </widget>
+   <widget class="QWidget" name="bg" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1100</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/new/bg50.png);</string>
+    </property>
+   </widget>
+   <zorder>bg</zorder>
+   <zorder>openGLWidget</zorder>
+   <zorder>shijiaotiaozheng</zorder>
+   <zorder>showError</zorder>
+   <zorder>showOut</zorder>
+   <zorder>showInput</zorder>
+   <zorder>showHelp</zorder>
+   <zorder>widget</zorder>
+   <zorder>label_8</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">
