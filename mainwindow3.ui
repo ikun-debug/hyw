@@ -35,7 +35,7 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>541</width>
+      <width>611</width>
       <height>431</height>
      </rect>
     </property>
@@ -133,8 +133,8 @@
     <widget class="QPushButton" name="pushButton">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>190</y>
+       <x>10</x>
+       <y>350</y>
        <width>93</width>
        <height>28</height>
       </rect>
@@ -147,13 +147,39 @@
      <property name="geometry">
       <rect>
        <x>150</x>
-       <y>200</y>
+       <y>350</y>
        <width>261</width>
-       <height>16</height>
+       <height>14</height>
       </rect>
      </property>
      <property name="text">
       <string>（联系作者告诉你的其他的问题）</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>180</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>4、模型比例不同</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>180</y>
+       <width>441</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>（肉眼所见模型大小差异不大，实际上点集的数量差异十分大</string>
      </property>
     </widget>
    </widget>

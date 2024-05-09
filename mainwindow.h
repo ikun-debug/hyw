@@ -47,6 +47,21 @@ private slots:
 //    void end_user();
 
     void on_showError_clicked();
+//    void on_pushButton_clicked();
+
+//    void on_showError_clicked();
+
+//    void on_showError_2_clicked();
+
+//    void on_showData_clicked();
+
+//    void on_Standard_clicked();
+
+//    void on_showStandard_clicked();
+
+//    void on_MainWindow_iconSizeChanged(const QSize &iconSize);
+
+//    void on_open_input_triggered();
 
 private:
 
