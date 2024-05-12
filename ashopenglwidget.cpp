@@ -126,7 +126,7 @@ void ASHOpenglWidget::paintGL()
         shaderprogram_input.enableAttributeArray("aNormal");
 
 
-        // 如果输入模型绘制错误
+        // 如果输入模型需要绘制错误
         if(model_input.isDrawerror)
         {
             //VBOError_input：输入模型错误信息的顶点缓冲对象。
@@ -214,7 +214,7 @@ void ASHOpenglWidget::paintGL()
         shaderprogram_out.enableAttributeArray("aNormal");
 
 
-        // 如果输出模型绘制错误
+        // 如果输出模型需要绘制错误
         if(model_out.isDrawerror)
         {
             //VBOError_out：输出模型错误信息的顶点缓冲对象

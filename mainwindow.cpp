@@ -34,7 +34,7 @@ MainWindow::MainWindow(QWidget *parent)
     setWindowTitle("三维网格模型误差分析工具");
 
     //固定窗口大小
-    setFixedSize(1100, 600); // 设置窗口大小为 1100x600 像素
+    setFixedSize(1300, 700); // 设置窗口大小为 1100x600 像素
 
 
 
@@ -75,31 +75,6 @@ MainWindow::MainWindow(QWidget *parent)
     QAction *openAction3 = ui->clear_all;
     openAction3->setIcon(QIcon(":/demo pic/Run.png"));
     */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     //链接
     connect(ui->open_input,SIGNAL(triggered()),this,SLOT(open_input()));
@@ -186,6 +161,27 @@ void MainWindow::showAHideB()
 }
 */
 
+//void MainWindow::on_showStandard_clicked()
+//{
+//    QMessageBox* msgBox = new QMessageBox(this);
+//        msgBox->setAttribute(Qt::WA_DeleteOnClose); // 确保消息框关闭时自动删除
+//        msgBox->setText("误差的颜色标准为：");
+//        msgBox->setIcon(QMessageBox::NoIcon);  // 设置图标为无图标
+//        msgBox->setWindowTitle("Standard");
+//        msgBox->show();
+//}
+
+
+
+//void MainWindow::on_showData_clicked()
+//{
+//    QMessageBox* msgBox = new QMessageBox(this);
+//        msgBox->setAttribute(Qt::WA_DeleteOnClose); // 确保消息框关闭时自动删除
+//        msgBox->setText("误差为：");
+//        msgBox->setIcon(QMessageBox::NoIcon);  // 设置图标为无图标
+//        msgBox->setWindowTitle("Data");
+//        msgBox->show();
+//}
 
 
 MainWindow::~MainWindow()
@@ -242,6 +238,7 @@ void MainWindow::showError()
     QVector<QVector3D> vertices_calulate_input=ui->openGLWidget->model_input.m_vertices_calculate;
     QVector<QVector3D> vertices_calulate_out=ui->openGLWidget->model_out.m_vertices_calculate;
     QVector<float> error;
+
 //    error.resize(vertices_calulate_input.size());
 //    for (int i = 0; i < vertices_calulate_input.size(); ++i) {
 //        QVector3D inputPoint = vertices_calulate_input.at(i);
