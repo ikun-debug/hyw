@@ -28,6 +28,18 @@ MainWindow::MainWindow(QWidget *parent)
     //connect(mainwindow2,SIGNAL(bSignal()),this,SLOT(showAHideB()));
 
 
+    mainwindow4 = new MainWindow4(this);
+
+
+
+    mainwindow5 = new MainWindow5(this);
+
+
+
+
+    mainwindow3 = new MainWindow3(this);
+
+
 
 
     //设置标题
@@ -74,6 +86,36 @@ MainWindow::MainWindow(QWidget *parent)
     //clear_all
     QAction *openAction3 = ui->clear_all;
     openAction3->setIcon(QIcon(":/demo pic/Run.png"));
+
+    //action_input
+    QAction *openAction4 = ui->clear_all;
+    openAction3->setIcon(QIcon(":/demo pic/Run.png"));
+
+
+    //action_output
+    QAction *openAction5 = ui->clear_all;
+    openAction3->setIcon(QIcon(":/demo pic/Run.png"));
+
+
+    //error
+    QAction *openAction6 = ui->clear_all;
+    openAction3->setIcon(QIcon(":/demo pic/Run.png"));
+
+    //color
+    QAction *openAction7 = ui->clear_all;
+    openAction3->setIcon(QIcon(":/demo pic/Run.png"));
+
+    //about
+    QAction *openAction8 = ui->clear_all;
+    openAction3->setIcon(QIcon(":/demo pic/Run.png"));
+
+    //help
+    QAction *openAction9 = ui->clear_all;
+    openAction3->setIcon(QIcon(":/demo pic/Run.png"));
+
+    //others
+    QAction *openAction10 = ui->clear_all;
+    openAction3->setIcon(QIcon(":/demo pic/Run.png"));
     */
 
     //链接
@@ -85,7 +127,25 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->showError,SIGNAL(clicked()),this,SLOT(showError()));
     connect(ui->showError,SIGNAL(clicked()),this,SLOT(&MainWindow::on_showMessage_clicked));
 
+
     connect(ui->showHelp,SIGNAL(clicked()),this,SLOT(showHelp()));
+
+    connect(ui->about,SIGNAL(triggered(bool)),this, SLOT(show_about()));
+
+
+    connect(ui->color,SIGNAL(triggered(bool)),this, SLOT(show_color()));
+
+    connect(ui->action_input,SIGNAL(triggered(bool)), this, SLOT(on_action_input_triggered()));
+
+    //connect((ui->action_output, SIGNAL(triggered(bool)), this, SLOT(on_action_output_triggered())));
+
+
+    connect(ui->action_error,SIGNAL(triggered(bool)),this,SLOT(on_action_error_triggered()));
+
+
+    connect(ui->show_window3,SIGNAL(triggered(bool)),this,SLOT(show_window3()));
+
+    connect(ui->help,SIGNAL(triggered(bool)),this,SLOT(help()));
 
     //视角调整范围
     ui->Slider_xrot->setRange(-180,180);
@@ -147,11 +207,51 @@ MainWindow::MainWindow(QWidget *parent)
 
 }
 
+
+//showhelp界面  关闭本界面打开showhelp界面
+//界面切换
 void MainWindow::showHelp()
 {
     this->hide();
     mainwindow2->show();
 }
+
+
+
+//关于本软件的文档
+void MainWindow::show_about()
+{
+    mainwindow5->show();
+}
+
+
+
+void MainWindow::show_color()
+{
+    mainwindow4->show();
+}
+
+
+void MainWindow::show_window3()
+{
+    mainwindow3->show();
+}
+
+
+void MainWindow::help()
+{
+
+    mainwindow2->show();
+}
+
+
+
+//void MainWindow::showHelp()
+//{
+//    this->hide();
+//    mainwindow2->show();
+//}
+
 
 /*
 void MainWindow::showAHideB()
@@ -290,4 +390,73 @@ void MainWindow::on_showError_clicked()
     msgBox->show();
 
     QTimer::singleShot(2000, msgBox, &QMessageBox::accept);  // 在3秒后接受（关闭）消息框
+}
+
+
+
+
+
+
+void MainWindow::on_action_input_triggered()
+{
+    ui->openGLWidget->model_input.isDraw=true;
+    ui->openGLWidget->model_out.isDraw=false;
+    ui->openGLWidget->update();
+    qDebug()<<"showInput";
+}
+
+
+
+
+
+
+void MainWindow::on_action_output_triggered()
+{
+    ui->openGLWidget->model_input.isDraw=false;
+    ui->openGLWidget->model_out.isDraw=true;
+    ui->openGLWidget->update();
+    qDebug()<<"showOut";
+}
+
+void MainWindow::on_action_error_triggered()
+{
+    QVector<QVector3D> vertices_calulate_input=ui->openGLWidget->model_input.m_vertices_calculate;
+    QVector<QVector3D> vertices_calulate_out=ui->openGLWidget->model_out.m_vertices_calculate;
+    QVector<float> error;
+
+//    error.resize(vertices_calulate_input.size());
+//    for (int i = 0; i < vertices_calulate_input.size(); ++i) {
+//        QVector3D inputPoint = vertices_calulate_input.at(i);
+//        float minDistance = std::numeric_limits<double>::max();
+//        for (const QVector3D& outputPoint : vertices_calulate_out) {
+//            float currentDistance = QVector3D::dotProduct(inputPoint - outputPoint, inputPoint - outputPoint);
+//            float distance = sqrt(currentDistance);
+//            //double distance = inputPoint.distanceTo(outputPoint);
+//            if (distance < minDistance) {
+//                minDistance = distance;
+//            }
+//        }
+//        error[i] = minDistance;
+//    }
+
+    error.resize(vertices_calulate_out.size());
+    for (int i = 0; i < vertices_calulate_out.size(); ++i) {
+        QVector3D outputPoint = vertices_calulate_out.at(i);
+        double minDistance = std::numeric_limits<double>::max();
+        for (const QVector3D& inputPoint : vertices_calulate_input) {
+            double currentDistance = QVector3D::dotProduct(inputPoint - outputPoint, inputPoint - outputPoint);
+            double distance = sqrt(currentDistance);
+            //double distance = inputPoint.distanceTo(outputPoint);
+            if (distance < minDistance) {
+                minDistance = distance;
+            }
+        }
+        error[i] = minDistance;
+    }
+    //ui->openGLWidget->model_input.m_error=error;
+    ui->openGLWidget->model_out.isDrawerror=true;
+    ui->openGLWidget->model_out.calculateError(error);
+    ui->openGLWidget->update();
+
+    qDebug()<<"showError";
 }

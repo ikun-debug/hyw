@@ -21,19 +21,25 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     mainwindow2.cpp \
-    mainwindow3.cpp
+    mainwindow3.cpp \
+    mainwindow4.cpp \
+    mainwindow5.cpp
 
 HEADERS += \
     ashopenglwidget.h \
     loadobj.h \
     mainwindow.h \
     mainwindow2.h \
-    mainwindow3.h
+    mainwindow3.h \
+    mainwindow4.h \
+    mainwindow5.h
 
 FORMS += \
     mainwindow.ui \
     mainwindow2.ui \
-    mainwindow3.ui
+    mainwindow3.ui \
+    mainwindow4.ui \
+    mainwindow5.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

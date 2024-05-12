@@ -6,6 +6,11 @@
 #include <QtMath>
 #include "ashopenglwidget.h"
 #include "mainwindow2.h"
+#include "mainwindow4.h"
+#include "mainwindow3.h"
+#include "mainwindow5.h"
+
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -24,6 +29,12 @@ public:
 //    QVector<float> end;
     Ui::MainWindow *ui;
     MainWindow2 *mainwindow2;
+
+    MainWindow4 *mainwindow4;
+
+    MainWindow3 *mainwindow3;
+
+    MainWindow5 *mainwindow5;
 
 private slots:
     void open_input();
@@ -62,6 +73,21 @@ private slots:
 //    void on_MainWindow_iconSizeChanged(const QSize &iconSize);
 
 //    void on_open_input_triggered();
+
+
+    void show_about();
+
+    void show_color();
+
+    void on_action_input_triggered();
+
+    void on_action_output_triggered();
+
+    void on_action_error_triggered();
+
+    void show_window3();
+
+    void help();
 
 private:
 

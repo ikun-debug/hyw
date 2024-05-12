@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow5</class>
+ <widget class="QMainWindow" name="MainWindow5">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1111</width>
+    <height>574</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>681</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>600</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 6pt &quot;华文行楷&quot;;
+font: 7pt &quot;华文行楷&quot;;
+font: 8pt &quot;华文行楷&quot;;
+font: 9pt &quot;华文行楷&quot;;
+font: 13pt &quot;华文行楷&quot;;
+font: 10pt &quot;方正粗黑宋简体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>本软件是用于三维模型误差对比的一个工具</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>600</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 6pt &quot;华文行楷&quot;;
+font: 7pt &quot;华文行楷&quot;;
+font: 8pt &quot;华文行楷&quot;;
+font: 9pt &quot;华文行楷&quot;;
+font: 13pt &quot;华文行楷&quot;;
+font: 10pt &quot;方正粗黑宋简体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>文件支持本地导入的.obj文件</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>600</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 6pt &quot;华文行楷&quot;;
+font: 7pt &quot;华文行楷&quot;;
+font: 8pt &quot;华文行楷&quot;;
+font: 9pt &quot;华文行楷&quot;;
+font: 13pt &quot;华文行楷&quot;;
+font: 10pt &quot;方正粗黑宋简体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>软件目前的误差范围定在了0到1之间</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>600</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 6pt &quot;华文行楷&quot;;
+font: 7pt &quot;华文行楷&quot;;
+font: 8pt &quot;华文行楷&quot;;
+font: 9pt &quot;华文行楷&quot;;
+font: 13pt &quot;华文行楷&quot;;
+font: 10pt &quot;方正粗黑宋简体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>本软件目前只用于毕设以及免费使用</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>600</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 6pt &quot;华文行楷&quot;;
+font: 7pt &quot;华文行楷&quot;;
+font: 8pt &quot;华文行楷&quot;;
+font: 9pt &quot;华文行楷&quot;;
+font: 13pt &quot;华文行楷&quot;;
+font: 10pt &quot;方正粗黑宋简体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>软件不会收费使用</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>600</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 6pt &quot;华文行楷&quot;;
+font: 7pt &quot;华文行楷&quot;;
+font: 8pt &quot;华文行楷&quot;;
+font: 9pt &quot;华文行楷&quot;;
+font: 13pt &quot;华文行楷&quot;;
+font: 10pt &quot;方正粗黑宋简体&quot;;
+color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>请勿商用！！！</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1111</width>
+      <height>574</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/demo/4.png);
+background-image: url(:/new/bg30.png);</string>
+    </property>
+   </widget>
+   <zorder>widget_2</zorder>
+   <zorder>widget</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1111</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

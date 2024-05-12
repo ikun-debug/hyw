@@ -179,7 +179,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>（肉眼所见模型大小差异不大，实际上点集的数量差异十分大</string>
+      <string>（肉眼所见模型大小差异不大，实际上点集的数量差异十分大）</string>
      </property>
     </widget>
    </widget>
