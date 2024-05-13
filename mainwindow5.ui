@@ -132,7 +132,7 @@ font: 10pt &quot;方正粗黑宋简体&quot;;</string>
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>220</y>
+       <y>260</y>
        <width>600</width>
        <height>30</height>
       </rect>
@@ -148,6 +148,94 @@ color: rgb(255, 0, 0);</string>
      </property>
      <property name="text">
       <string>请勿商用！！！</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>410</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/demo/maill.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>410</y>
+       <width>72</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 22pt &quot;黑体&quot;;
+font: 75 22pt &quot;Berlin Sans FB Demi&quot;;
+font: 75 9pt &quot;Berlin Sans FB Demi&quot;;
+font: 22pt &quot;Bauhaus 93&quot;;</string>
+     </property>
+     <property name="text">
+      <string>:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>400</y>
+       <width>261</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 63 18pt &quot;Bahnschrift SemiBold SemiConden&quot;;</string>
+     </property>
+     <property name="text">
+      <string>2695348358@qq.com</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>600</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 6pt &quot;华文行楷&quot;;
+font: 7pt &quot;华文行楷&quot;;
+font: 8pt &quot;华文行楷&quot;;
+font: 9pt &quot;华文行楷&quot;;
+font: 13pt &quot;华文行楷&quot;;
+font: 10pt &quot;方正粗黑宋简体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>所有收费均为盗版</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="GIF1">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>120</y>
+       <width>251</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
      </property>
     </widget>
    </widget>

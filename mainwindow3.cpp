@@ -1,7 +1,26 @@
 #include "mainwindow3.h"
 #include "ui_mainwindow3.h"
-#include <QWindow>
+#include <QFileDialog>
+#include <QMenuBar>
+#include <QHBoxLayout>
+#include <QApplication>
 #include <QWidget>
+#include <QMessageBox>
+#include <QTimer>
+#include <QMainWindow>
+#include <QAction>
+#include <QFile>
+#include <QTextStream>
+#include <QPalette>
+#include <QGuiApplication>
+#include <QPainter>
+#include <QToolBar>
+#include<QStatusBar>
+#include<QLabel>
+#include <QMovie>
+#include <QString>
+#include <QHBoxLayout>
+
 
 
 MainWindow3::MainWindow3(QWidget *parent) :
@@ -17,6 +36,18 @@ MainWindow3::MainWindow3(QWidget *parent) :
 
     //固定窗口大小
     setFixedSize(800, 450); // 设置窗口大小为 900x400 像素
+
+    // 获取指向QLabel的指针
+    QLabel *label = ui->GIF2;
+
+    // 创建一个QMovie对象并加载GIF图像
+    QMovie *movie = new QMovie(":/demo/study .gif"); // 替换为GIF图像路径
+
+    // 将QMovie对象设置到QLabel中
+    label->setMovie(movie);
+
+    // 开始播放GIF
+    movie->start();
 
 
 //    QWidget *box = new QWidget(this);
@@ -67,3 +98,85 @@ MainWindow3::~MainWindow3()
 //   /* 设置窗体不透明度，范围是0.0～1.0。1则为不透明，0为全透明 */
 //   this->setWindowOpacity(dobleopacity);
 //}
+
+//void MainWindow3::on_pushButton_clicked()
+//{
+//    QMessageBox* msgBox = new QMessageBox(this);
+//    // 确保消息框关闭时自动删除
+//    msgBox->setAttribute(Qt::WA_DeleteOnClose);
+
+
+//    // 创建一个QLabel用于显示GIF图片
+//    QLabel* label = new QLabel(msgBox);
+//    QMovie* movie = new QMovie(":/demo/cheat.gif"); // 替换为你的GIF图片路径
+//    label->setMovie(movie);
+//    movie->start();
+
+
+//    // 设置消息框内容
+//    //\n可以显示下一行内容
+//    QString message = "作者的邮箱是：******\n作者的电话是：******";
+
+//    // 创建一个QLabel用于显示文本
+//    QLabel* textLabel = new QLabel(message, msgBox);
+
+
+//    // 不设置图标
+//    msgBox->setIcon(QMessageBox::NoIcon);
+
+//    // 设置消息框标题为自定义标题
+//    msgBox->setWindowTitle("联系方式");
+
+//    //将图片和文字放两边
+//    QHBoxLayout* layout = new QHBoxLayout;
+//    layout->addWidget(label);
+//    layout->addWidget(textLabel);
+
+//    msgBox->setLayout(layout);
+
+
+//    // 设置消息框的大小
+//    msgBox->resize(3000, 1200); // 设置宽度为600，高度为400
+
+//    //设置消息框的最小的大小
+//    msgBox->setMinimumSize(600, 400);
+
+//    //根据消息框的大小策略为固定大小
+//    msgBox->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+
+//    //msgBox->setWindowTitle("Message");
+//    msgBox->show();
+
+//    //QTimer::singleShot(2000, msgBox, &QMessageBox::accept);  // 在3秒后接受（关闭）消息框
+//}
+
+void MainWindow3::on_pushButton_clicked()
+{
+    QMessageBox* msgBox = new QMessageBox(this);
+    // 确保消息框关闭时自动删除
+    msgBox->setAttribute(Qt::WA_DeleteOnClose);
+
+//    // 创建一个QLabel用于显示GIF图片
+//    QLabel* label = new QLabel(msgBox);
+//    QMovie* movie = new QMovie("path/to/your/gif/image.gif"); // 替换为你的GIF图片路径
+//    label->setMovie(movie);
+//    movie->start();
+
+    // 设置消息框内容
+    QString message = "作者的邮箱是：******\n作者的电话是：******";
+    msgBox->setText(message);
+
+    // 不设置图标
+    msgBox->setIcon(QMessageBox::NoIcon);
+
+    // 设置消息框标题为自定义标题
+    msgBox->setWindowTitle("联系方式");
+
+//    QVBoxLayout* layout = new QVBoxLayout;
+//    layout->addWidget(label);
+//    msgBox->setLayout(layout);
+
+    msgBox->show();
+
+    //QTimer::singleShot(2000, msgBox, &QMessageBox::accept);  // 在3秒后接受（关闭）消息框
+}

@@ -24,6 +24,7 @@ private:
 
 private slots:
     //void spinBoxValueChanged(int);
+    void on_pushButton_clicked();
 };
 
 #endif // MAINWINDOW3_H
