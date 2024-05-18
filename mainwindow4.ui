@@ -130,6 +130,23 @@ font: 13pt &quot;华文行楷&quot;;</string>
      </rect>
     </property>
    </widget>
+   <widget class="QWidget" name="bg" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1600</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/demo/4.png);
+background-image: url(:/demo/background-4.png);</string>
+    </property>
+   </widget>
+   <zorder>bg</zorder>
+   <zorder>widget</zorder>
+   <zorder>widget_2</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -141,7 +158,6 @@ font: 13pt &quot;华文行楷&quot;;</string>
     </rect>
    </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

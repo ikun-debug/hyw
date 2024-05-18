@@ -25,5 +25,10 @@
         <file>demo/juann.jpg</file>
         <file>demo/look.gif</file>
         <file>demo/PATRICK.gif</file>
+        <file>demo/QueryExtender.png</file>
+        <file>demo/QueryViewError.png</file>
+        <file>demo/QuestionMark.png</file>
+        <file>demo/ClearWindowContent.png</file>
+        <file>demo/TextElement.png</file>
     </qresource>
 </RCC>

@@ -415,15 +415,26 @@ font: 16pt &quot;楷体&quot;;</string>
      </property>
      <property name="font">
       <font>
-       <family>Times New Roman</family>
-       <pointsize>10</pointsize>
+       <family>华文楷体</family>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(85, 170, 255);
+font: 9pt &quot;楷体&quot;;
 font: 10pt &quot;Times New Roman&quot;;
 font: 10pt &quot;Times New Roman&quot;;
-
+font: 10pt &quot;楷体&quot;;
+font: 9pt &quot;黑体&quot;;
+font: 9pt &quot;华文行楷&quot;;
+font: 10pt &quot;黑体&quot;;
+font: 9pt &quot;微软雅黑&quot;;
+font: 9pt &quot;方正粗黑宋简体&quot;;
+font: 9pt &quot;微软雅黑&quot;;
+font: 11pt &quot;华文楷体&quot;;
 
 color: rgb(255, 255, 255);
 alternate-background-color: rgb(85, 170, 255);
@@ -432,7 +443,7 @@ selection-background-color: rgb(85, 170, 255);
 border-radius:5px;</string>
      </property>
      <property name="text">
-      <string>showInput</string>
+      <string>输入文件</string>
      </property>
     </widget>
     <widget class="QPushButton" name="showOut">
@@ -446,15 +457,26 @@ border-radius:5px;</string>
      </property>
      <property name="font">
       <font>
-       <family>Times New Roman</family>
-       <pointsize>10</pointsize>
+       <family>华文楷体</family>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(85, 170, 255);
+font: 9pt &quot;楷体&quot;;
 font: 10pt &quot;Times New Roman&quot;;
 font: 10pt &quot;Times New Roman&quot;;
-
+font: 10pt &quot;楷体&quot;;
+font: 9pt &quot;黑体&quot;;
+font: 9pt &quot;华文行楷&quot;;
+font: 10pt &quot;黑体&quot;;
+font: 9pt &quot;微软雅黑&quot;;
+font: 9pt &quot;方正粗黑宋简体&quot;;
+font: 9pt &quot;微软雅黑&quot;;
+font: 11pt &quot;华文楷体&quot;;
 
 color: rgb(255, 255, 255);
 alternate-background-color: rgb(85, 170, 255);
@@ -463,7 +485,7 @@ selection-background-color: rgb(85, 170, 255);
 border-radius:5px;</string>
      </property>
      <property name="text">
-      <string>showOut</string>
+      <string>输出文件</string>
      </property>
     </widget>
     <widget class="QPushButton" name="showError">
@@ -477,15 +499,26 @@ border-radius:5px;</string>
      </property>
      <property name="font">
       <font>
-       <family>Times New Roman</family>
-       <pointsize>10</pointsize>
+       <family>华文楷体</family>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(85, 170, 255);
+font: 9pt &quot;楷体&quot;;
 font: 10pt &quot;Times New Roman&quot;;
 font: 10pt &quot;Times New Roman&quot;;
-
+font: 10pt &quot;楷体&quot;;
+font: 9pt &quot;黑体&quot;;
+font: 9pt &quot;华文行楷&quot;;
+font: 10pt &quot;黑体&quot;;
+font: 9pt &quot;微软雅黑&quot;;
+font: 9pt &quot;方正粗黑宋简体&quot;;
+font: 9pt &quot;微软雅黑&quot;;
+font: 11pt &quot;华文楷体&quot;;
 
 color: rgb(255, 255, 255);
 alternate-background-color: rgb(85, 170, 255);
@@ -494,7 +527,7 @@ selection-background-color: rgb(85, 170, 255);
 border-radius:5px;</string>
      </property>
      <property name="text">
-      <string>showError</string>
+      <string>计算误差</string>
      </property>
     </widget>
     <widget class="QPushButton" name="showHelp">
@@ -508,9 +541,17 @@ border-radius:5px;</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(85, 170, 255);
+font: 9pt &quot;楷体&quot;;
 font: 10pt &quot;Times New Roman&quot;;
 font: 10pt &quot;Times New Roman&quot;;
-
+font: 10pt &quot;楷体&quot;;
+font: 9pt &quot;黑体&quot;;
+font: 9pt &quot;华文行楷&quot;;
+font: 10pt &quot;黑体&quot;;
+font: 9pt &quot;微软雅黑&quot;;
+font: 9pt &quot;方正粗黑宋简体&quot;;
+font: 9pt &quot;微软雅黑&quot;;
+font: 11pt &quot;华文楷体&quot;;
 
 color: rgb(255, 255, 255);
 alternate-background-color: rgb(85, 170, 255);
@@ -519,7 +560,7 @@ selection-background-color: rgb(85, 170, 255);
 border-radius:5px;</string>
      </property>
      <property name="text">
-      <string>showHelp</string>
+      <string>帮助</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_8">
@@ -628,7 +669,7 @@ border-radius:5px;</string>
      <normaloff>:/demo/FolderOpened.png</normaloff>:/demo/FolderOpened.png</iconset>
    </property>
    <property name="text">
-    <string>open_input</string>
+    <string>输入文件</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+1</string>
@@ -640,7 +681,7 @@ border-radius:5px;</string>
      <normaloff>:/demo/OpenFolder.png</normaloff>:/demo/OpenFolder.png</iconset>
    </property>
    <property name="text">
-    <string>open_out</string>
+    <string>输出文件</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+2</string>
@@ -649,10 +690,10 @@ border-radius:5px;</string>
   <action name="clear_all">
    <property name="icon">
     <iconset resource="demo.qrc">
-     <normaloff>:/demo/Run.png</normaloff>:/demo/Run.png</iconset>
+     <normaloff>:/demo/ClearWindowContent.png</normaloff>:/demo/ClearWindowContent.png</iconset>
    </property>
    <property name="text">
-    <string>clear_all</string>
+    <string>清屏</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+3</string>
@@ -703,6 +744,10 @@ border-radius:5px;</string>
    </property>
   </action>
   <action name="action_error">
+   <property name="icon">
+    <iconset resource="demo.qrc">
+     <normaloff>:/demo/Run.png</normaloff>:/demo/Run.png</iconset>
+   </property>
    <property name="text">
     <string>计算误差</string>
    </property>
@@ -711,6 +756,10 @@ border-radius:5px;</string>
    </property>
   </action>
   <action name="about">
+   <property name="icon">
+    <iconset resource="demo.qrc">
+     <normaloff>:/demo/QueryExtender.png</normaloff>:/demo/QueryExtender.png</iconset>
+   </property>
    <property name="text">
     <string>关于</string>
    </property>
@@ -719,6 +768,10 @@ border-radius:5px;</string>
    </property>
   </action>
   <action name="color">
+   <property name="icon">
+    <iconset resource="demo.qrc">
+     <normaloff>:/demo/TextElement.png</normaloff>:/demo/TextElement.png</iconset>
+   </property>
    <property name="text">
     <string>色差表</string>
    </property>
@@ -727,6 +780,10 @@ border-radius:5px;</string>
    </property>
   </action>
   <action name="help">
+   <property name="icon">
+    <iconset resource="demo.qrc">
+     <normaloff>:/demo/QuestionMark.png</normaloff>:/demo/QuestionMark.png</iconset>
+   </property>
    <property name="text">
     <string>帮助</string>
    </property>
@@ -735,6 +792,10 @@ border-radius:5px;</string>
    </property>
   </action>
   <action name="show_window3">
+   <property name="icon">
+    <iconset resource="demo.qrc">
+     <normaloff>:/demo/QueryViewError.png</normaloff>:/demo/QueryViewError.png</iconset>
+   </property>
    <property name="text">
     <string>问题</string>
    </property>

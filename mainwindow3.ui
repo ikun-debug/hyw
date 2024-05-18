@@ -57,25 +57,25 @@
       <rect>
        <x>20</x>
        <y>60</y>
-       <width>201</width>
+       <width>241</width>
        <height>16</height>
       </rect>
      </property>
      <property name="text">
-      <string>1、input和output的顺序反了</string>
+      <string>1、输入文件和输出文件的顺序反了</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>270</x>
        <y>60</y>
        <width>281</width>
        <height>16</height>
       </rect>
      </property>
      <property name="text">
-      <string>（尝试对换input和output的顺序）</string>
+      <string>（尝试对换输入文件和输出文件的顺序）</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_4">

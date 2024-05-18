@@ -217,7 +217,7 @@ font: 9pt &quot;方正姚体&quot;;
 font: 9pt &quot;楷体&quot;;</string>
      </property>
      <property name="text">
-      <string>clear_all表示清屏功能</string>
+      <string>清屏：将屏幕上的文件清除</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -225,26 +225,6 @@ font: 9pt &quot;楷体&quot;;</string>
       <rect>
        <x>20</x>
        <y>80</y>
-       <width>171</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 9pt &quot;楷体&quot;;
-font: 9pt &quot;等线&quot;;
-font: 9pt &quot;方正舒体&quot;;
-font: 9pt &quot;方正姚体&quot;;
-font: 9pt &quot;楷体&quot;;</string>
-     </property>
-     <property name="text">
-      <string>input：输入的比对文件</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_6">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>110</y>
        <width>221</width>
        <height>16</height>
       </rect>
@@ -257,7 +237,27 @@ font: 9pt &quot;方正姚体&quot;;
 font: 9pt &quot;楷体&quot;;</string>
      </property>
      <property name="text">
-      <string>output：标准文件（用于比对）</string>
+      <string>输入文件：输入的比对文件</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>110</y>
+       <width>271</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 9pt &quot;楷体&quot;;
+font: 9pt &quot;等线&quot;;
+font: 9pt &quot;方正舒体&quot;;
+font: 9pt &quot;方正姚体&quot;;
+font: 9pt &quot;楷体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>输出文件：标准文件（用于比对）</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_7">
@@ -277,7 +277,7 @@ font: 9pt &quot;方正姚体&quot;;
 font: 9pt &quot;楷体&quot;;</string>
      </property>
      <property name="text">
-      <string>结果展示在output文件上</string>
+      <string>结果展示在输出文件上</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_8">
@@ -397,7 +397,7 @@ font: 9pt &quot;方正姚体&quot;;
 font: 9pt &quot;楷体&quot;;</string>
      </property>
      <property name="text">
-      <string>open_input打开input文件</string>
+      <string>点击输入文件打开比对文件</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_16">
@@ -417,7 +417,7 @@ font: 9pt &quot;方正姚体&quot;;
 font: 9pt &quot;楷体&quot;;</string>
      </property>
      <property name="text">
-      <string>open_output打开output文件</string>
+      <string>点击输出文件打开输出文件</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_17">
@@ -437,7 +437,7 @@ font: 9pt &quot;方正姚体&quot;;
 font: 9pt &quot;楷体&quot;;</string>
      </property>
      <property name="text">
-      <string>点击showError即可启动对比程序</string>
+      <string>点击计算误差即可启动对比程序</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_18">
@@ -477,7 +477,7 @@ font: 9pt &quot;方正姚体&quot;;
 font: 9pt &quot;楷体&quot;;</string>
      </property>
      <property name="text">
-      <string>（showInput即可展示input文件）</string>
+      <string>（按钮即可展示输入文件）</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_20">
@@ -497,7 +497,7 @@ font: 9pt &quot;方正姚体&quot;;
 font: 9pt &quot;楷体&quot;;</string>
      </property>
      <property name="text">
-      <string>（showOut即可展示output文件）</string>
+      <string>（按钮即可展示输出文件）</string>
      </property>
     </widget>
    </widget>
